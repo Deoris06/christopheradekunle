@@ -7,14 +7,16 @@ function sendEmail(full_name, email, phone, message){
 	var message = $(".message").val();
 	// console.log(full_name, email, phone, message)
 	Email.send({
-    SecureToken : "2277c33c-385d-4205-8e12-24f104351d33",
-    To : 'christopher.adekunle@outlook.com',
-    From : "samuel@gmail.com",
-    Subject : "This is the subject",
-    Body : "And this is the body"
-}).then(
-  message => alert(message)
-);
+	Host: "smtp.elasticemail.com",
+	Username : "adekschris@gmail.com",
+	Password : "55DAAE186A3F5679A973E8F4FAEF9647D7E3",
+	To : 'christopher.adekunle@outlook.com',
+	From : `adekschris@gmail.com`,
+	Subject : "INFORMATION",
+	Body : `This is gotten fron`,
+	}).then(
+		message => alert("mail sent successfully")
+	);
 }
 
 
