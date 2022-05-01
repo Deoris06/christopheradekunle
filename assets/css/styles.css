@@ -474,6 +474,9 @@ footer{
 	.md-center{
 		text-align: center;
 	}
+	.md-align-none{
+		align-content: unset;
+	}
 	.md-self-center{
 		align-self: center;
 	}
@@ -482,6 +485,9 @@ footer{
 	}
 	.md-mb-2{
 		margin-bottom: 1.2rem;
+	}
+	.md-width-full{
+		width: 100%;
 	}
 }
 
