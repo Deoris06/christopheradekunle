@@ -480,6 +480,9 @@ footer{
 	.md-justify-center{
 		justify-content: center;
 	}
+	.md-mb-2{
+		margin-bottom: 1.2rem;
+	}
 }
 
 @media(max-width: 767px){
