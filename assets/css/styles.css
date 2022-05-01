@@ -27,6 +27,7 @@ body{
 	text-rendering: optimizeLegibility;
 	color: var(--white-color);
 	line-height: 1.5;
+	overflow-x: hidden;
 }
 
 html{
@@ -488,6 +489,9 @@ footer{
 	}
 	.md-width-full{
 		width: 100%;
+	}
+	.no-wrap{
+		flex-wrap: nowrap;
 	}
 }
 
