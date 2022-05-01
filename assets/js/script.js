@@ -49,3 +49,13 @@ $("#sending").on("click", function(e){
 	// console.log('you')
 	sendEmail();
 })
+
+var x = window.matchMedia("(max-width: 576px)")
+console.log(x)
+
+function reduceSize(x){
+  if(x.matches){
+	$("textarea").attr("rows", "9")
+   }
+}
+reduceSize(x);
