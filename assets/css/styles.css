@@ -471,6 +471,7 @@ footer{
 	}
 	.container{
 		margin: 10px 30px;
+		overflow-x: hidden;
 	}
 	.hero{
 		margin-top: 1.5rem;
