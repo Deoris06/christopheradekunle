@@ -454,6 +454,9 @@ footer{
 }
 /* responsive */
 @media(max-width: 576px) {
+	body{
+		overflow-x: hidden;
+	}
 	.nav{
 		flex-direction: column;
 		justify-content: start;
@@ -462,6 +465,9 @@ footer{
 	.nav__menu{
 		flex-direction: column;
 		display: none;
+	}
+	.card-flip{
+		width: 100%;
 	}
 	.container{
 		margin: 10px 30px;
