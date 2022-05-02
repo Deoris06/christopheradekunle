@@ -86,3 +86,8 @@ $('#GetFile').on('click', function () {
         }
     });
 });
+
+//get current year
+let year = new Date();
+let yearNow = year.getFullYear();
+$(".presentyear").append(`${yearNow}. All right reserved. Made with <span class="text--tomato">&hearts;</span> Roundinc`)
