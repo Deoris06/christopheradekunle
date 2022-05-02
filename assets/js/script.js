@@ -55,7 +55,7 @@ $("#sending").on("click", function(e){
 })
 
 var x = window.matchMedia("(max-width: 576px)")
-console.log(x)
+// console.log(x)
 
 function reduceSize(x){
   if(x.matches){
@@ -63,3 +63,26 @@ function reduceSize(x){
    }
 }
 reduceSize(x);
+
+$('#GetFile').on('click', function () {
+    $.ajax({
+        url: 'https://dl.dropboxusercontent.com/s/ym8uaugb77r32fu/Resume.pdf',
+        method: 'GET',
+        headers: {
+        'Content-Type': 'application/x-www-form-urlencoded'
+    },
+        xhrFields: {
+            responseType: 'blob'
+        },
+        success: function (data) {
+            var a = document.createElement('a');
+            var url = window.URL.createObjectURL(data);
+            a.href = url;
+            a.download = 'Resume.pdf';
+            document.body.append(a);
+            a.click();
+            a.remove();
+            window.URL.revokeObjectURL(url);
+        }
+    });
+});
