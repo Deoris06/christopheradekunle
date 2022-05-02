@@ -79,19 +79,18 @@ header{
 }
 .nav-toggler{
 	height: 34px;
-	width: 44px;
+	width: 30px;
 	border-radius: 4px;
 	cursor: pointer;
 	display: none;
 	align-items: center;
 	justify-content: center;
-	margin-right: 5px;
 }
 .nav-toggler span{
 	display: block;
 	height: 2px;
 	width: 35px;
-	background-color: var(--white-color);
+	background-color: var(--tomato);
 	position: relative;
 }
 .nav-toggler span::before,
@@ -100,14 +99,14 @@ header{
    position: absolute;
    width: 100%;
    height: 100%;
-   background-color: var(--white-color);
+   background-color: var(--tomato);
    left:0;
 }
 .nav-toggler span::before{
-	top: -6px;
+	top: -9px;
 }
 .nav-toggler span::after{
-	top: 6px;
+	top: 9px;
 }
 /* Reusable color declarations */
 .bg--dark{
@@ -558,6 +557,9 @@ footer{
 	}
 	.md-column{
 		flex-direction: column;
+	}
+	.md-fs-lg{
+		font-size: 16.2px;
 	}
 	.md-center{
 		text-align: center;
