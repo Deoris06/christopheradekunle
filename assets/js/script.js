@@ -24,7 +24,7 @@ function sendEmail(full_name, email, phone, message){
 		emailjs.send("service_63oqjzk", "template_t2y8ma7", params).then((response) => {
 			if(response){
 				Swal.fire({
-				  position: 'top',
+				  position: 'center',
 				  icon: 'success',
 				  title: 'Your message has been sent!',
 				  showConfirmButton: false,
