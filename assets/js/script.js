@@ -1,6 +1,10 @@
 // alert("here")
 (function(){
       emailjs.init("alxUeg3dPRCMNZVNU");
+      AOS.init({
+      	offset: 20,
+      	duration: 1000
+      });
 })();
 
 function sendEmail(full_name, email, phone, message){

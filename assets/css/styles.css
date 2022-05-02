@@ -35,6 +35,7 @@ html{
 }
 a{
 	text-decoration: none;
+	color: #fff;
 }
 ul{
 	list-style: none;
@@ -557,6 +558,9 @@ footer{
 	}
 	.md-m-9{
 		margin-top: 90px;
+	}
+	.md-sm{
+		font-size: 14px;
 	}
 	.md-mt-lg{
 		margin-top: 38rem;
