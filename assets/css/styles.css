@@ -394,7 +394,7 @@ header{
 /* timeline */
 .timeline-section{
 	background-color: var(--light-black);
-	min-height: 100vh;
+	min-height: 70vh;
 	padding: 100px 205px;
 	border: 1px solid var(--tomato);
 }
@@ -549,13 +549,19 @@ footer{
 .absolute{
 	position: absolute;
 	top: -40px;
-	left: -5%;
+	left: -47px;
 	width: 400px;
 }
 /* responsive */
 @media(max-width: 576px) {
 	body{
 		overflow-x: hidden;
+	}
+	.md-p-sm{
+		padding: 14px !important;
+	}
+	.left-1{
+		left: .1% !important;
 	}
 	.md-m-9{
 		margin-top: 90px;
