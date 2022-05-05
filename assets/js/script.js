@@ -66,7 +66,7 @@ function reduceSize(x){
 }
 reduceSize(x);
 
-$('#GetFile').on('click', function () {
+$('.GetFile').on('click', function () {
     $.ajax({
         url: 'https://dl.dropboxusercontent.com/s/ym8uaugb77r32fu/Resume.pdf',
         method: 'GET',
