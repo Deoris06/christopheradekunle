@@ -6,6 +6,8 @@
       	duration: 1000
       });
 })();
+$('iframe').css('background', 'white');
+$('iframe').contents().find('body').css('backgroundColor', 'white');
 
 function sendEmail(full_name, email, phone, message){
 	

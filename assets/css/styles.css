@@ -395,7 +395,7 @@ header{
 .timeline-section{
 	background-color: var(--light-black);
 	min-height: 100vh;
-	padding: 100px 15px;
+	padding: 100px 205px;
 	border: 1px solid var(--tomato);
 }
 .timeline-items{
