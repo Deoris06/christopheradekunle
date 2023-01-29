@@ -259,10 +259,16 @@ header{
 .p-4{
 	padding: 2.2rem;
 }
+.pr-3{
+	padding-right: 1rem;
+}
 .mr-2{
 	margin-right: 1rem;
 }
 
+.mr-5{
+	margin-right: 5rem;
+}
 /* shadow declarations */
 .shadow-sm{
 	box-shadow: 0 3px 6px rgba(0,0,0,0.23);
@@ -341,7 +347,11 @@ header{
 .h-56{
 	height: 13rem;
 }
-
+.image-art{
+	width:100%; 
+	height:auto; object-fit:cover; 
+	border-radius: 500px;
+}
 .middle{
 	position: absolute;
 	top: 15%;
@@ -533,14 +543,21 @@ footer{
 }
 
 .circle-art{
-	width: 300px;
-    height: 300px;
+	width: 800px;
+    height: 800px;
     background: var(--tomato);
     position: absolute;
     top: 21%;
     z-index: 0;
     border-radius: 50%;
+	max-width:1600px;
     left: 5%;
+}
+.image-art{
+	width:70%; 
+	height:auto; 
+	object-fit:cover; 
+	border-radius: 500px;
 }
 .relative{
 	position: relative;
@@ -556,6 +573,17 @@ footer{
 @media(max-width: 576px) {
 	body{
 		overflow-x: hidden;
+	}
+
+	.circle-art{
+		width: 300px;
+		height: 300px;
+		background: var(--tomato);
+		position: absolute;
+		top: 1%;
+		z-index: 0;
+		border-radius: 50%;
+		left: 5%;
 	}
 	.md-p-sm{
 		padding: 14px !important;
@@ -636,7 +664,16 @@ footer{
     .md-none{
     	display: none;
     }
-
+	.absolute {
+		top: -0px;
+		left: 20px;
+	  }
+	  .image-art{
+		width:70%; 
+		height:auto; 
+		object-fit:cover; 
+		border-radius: 500px;
+	}
     .header .nav, .download{
     	position: absolute;
     	left:0;
